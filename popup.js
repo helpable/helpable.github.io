@@ -6,7 +6,7 @@
 
 function show_selected_team(event) {
     let member = event.target.parentNode.parentNode.parentNode
-    console.log(member.querySelector('#name').value)
+    console.log(member)
 
 
     setTimeout(() => {
