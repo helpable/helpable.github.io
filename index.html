@@ -1,0 +1,357 @@
+<html>
+  <head>
+	<meta charset="UTF-8"/>
+    <title>helpable - Diplomprojekt 5xHIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">-->
+    <link rel="manifest" href="./icons/site.webmanifest">
+    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<link rel="shortcut icon" href="./icons/favicon.ico">-->
+	<link rel="stylesheet" type="text/css" href="milestones.css">
+	<script src="milestones.js"></script>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <div class="page_wrapper" id="hide_on_click">
+      <div id="tothetop" class="content_container">
+        <!-- Navbar -->
+        <div class="section nav withborder">
+          <div class="navbaritem"><a href="#tothetop"><div class="nav_inner nav_img"><img class="navbar_image" src="logo.png"></div></a></div>
+          <div class="navbaritem"><a href="#features"><div class="nav_inner">Features</div></a></div>
+          <div class="navbaritem"><a href="#services"><div class="nav_inner">Services</div></a></div>
+          <div class="navbaritem"><a href="#meilensteine"><div class="nav_inner">Meilensteine</div></a></div>
+          <div class="navbaritem"><a href="#team"><div class="nav_inner">Team</div></a></div>
+        </div>
+        
+        <!-- Header -->
+        <div class="section header">
+          <div class="header_text">
+            <h2>helpable</h2>
+            <h3>Corporate- and Social-Responsibilty Platform</h3>
+            <p>
+              Currently finding and recruiting volunteers is a costly and time-intensive process. The few 
+              existing solutions to connect volunteers with social organizations provide insufficient user experience
+              and do not fully represent the broad range of available non-profit organizations. At
+              the same time more and more people feel the need to volunteer due to current developements and social issues.
+            </p>
+          </div>
+          <div class="header_image">
+            <div class="header_image_container"></div>
+          </div>
+        </div>
+
+         <!-- Team -->
+        <div id="team" class="section team">
+          <h2 class="p30">Team</h2>
+          <h3 class="p30">The helpable dipoma project team</h3>
+          <div class="card_container">
+              <div class="inner">
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/caroline.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Caroline Jethan</b></div>
+                          <div class="two_line_text" id="role"><i>Product-Owner, Developer</i></div>
+                          <p class="hidden" id="text">In her role as project manager, Caroline will take care of project management and organization within the team. She is also responsible for the implementation of a smart search and recommendation algorithm.
+                            <br/>
+                            E-Mail: <a href="mailto:cjethan@student.tgm.ac.at">cjethan@student.tgm.ac.at</a>
+                          </p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/benjamin.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Benjamin Kürmayr</b></div>
+                          <div class="two_line_text" id="role"><i>Technical Architect, Developer</i></div>
+                          <p class="hidden" id="text">In his role as technical architect Benjamin is responsible for all kinds of technical decisions. He is also responsible for developement and optimization of user interfaces.
+                            <br/>
+                            E-Mail: <a href="mailto:bkuermayr@student.tgm.ac.at">bkuermayr@student.tgm.ac.at</a>
+                          </p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/timon.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Timon Ring</b></div>
+                          <div class="two_line_text" id="role"><i>Creative Director, Developer</i></div>
+                          <p class="hidden" id="text">As fullstack developer Timon is responsible for the implementation of features in the backend as well as the frontend. He is also developing a gamification concept for the helpable app.
+                            He also does creative stuff.
+                            <br/>
+                            E-Mail: <a href="mailto:tring@student.tgm.ac.at">tring@student.tgm.ac.at</a>
+                          </p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/mike.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Michael Borko</b></div>
+                          <div class="two_line_text" id="role"><i>Scrum Master</i></div>
+                          <p class="hidden" id="text">As Scrum Master Mike oversees the collaborative process in the team and tries to enable a good working atmosphere. 
+                            <br/>
+                            E-Mail: <a href="mailto:mborko@tgm.ac.at">mborko@tgm.ac.at</a>
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/adin.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Adin Karic</b></div>
+                          <div class="two_line_text" id="role"><i>Client</i></div>
+                          <p class="hidden" id="text">Adin is the client of the helpable app. His requirements are implemented into the helpable product.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="portraits/lilly.JPG" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Elisabeth Brodnik</b></div>
+                          <div class="two_line_text" id=><i>Advisor</i></div>
+                          <p class="hidden" id="text">Lilly takes on an advisory role in the helpable projects and supports the team with her expertise.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="infobox" id="infobox_team">
+              <h4 id="team_name"></h4>
+              <h5 id="team_subtitle"></h5>
+              <p id="team_para"></p>
+          </div>
+      </div>
+        
+        <!-- Features -->
+        <div id="features" class="section features">
+            <h2 class="p30">The 3 pillars of helpable</h2>
+            <h3 class="p30"></h3>
+            <div class="card_container">
+                <div class="inner">
+                  <div class="item">
+                    <div class="half">
+                        <div class=card_image_container>
+                            <img class="card_image" src="img/handshake.png" alt="">
+                        </div> 
+                    </div>
+                    <div class="half">
+                        <div class="card_text">
+                            Volunteers
+                            <p style="text-align:center;">
+                              Volunteers can apply and carry out missions and earn points by doing so
+                            </p>  
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                     <div class="half">
+                        <div class=card_image_container>
+                            <img class="card_image" src="img/charity.png" alt="">
+                          </div> 
+                    </div>
+                    <div class="half">
+                        <div class="card_text">
+                            Non-profit organizations
+                            <p style="text-align:center;">
+                              Social organizations can post missions, where they need volunteers
+                            </p>  
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="half">
+                        <div class=card_image_container>
+                            <img class="card_image" src="img/enterprise.png" alt="">
+                          </div> 
+                    </div>
+                    <div class="half">
+                        <div class="card_text">
+                            Company partners 
+                            <p style="text-align:center;">
+                              Provide goodies to motivate volunteers
+                            </p>  
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="infobox" id="infobox_feature">
+                <h4 id="feature_name"></h4>
+                <h5 id="feature_subtitle"></h5>
+                <p id="feature_p1"></p>
+                <p id="feature_p2"></p>
+            </div>
+
+        </div>
+        <!-- Services -->
+        <div id="services" class="section services">
+            <h2 class="p30">Advantages</h2>
+            <div class="card_container">
+                <div class="inner">
+                  <div class="item" onclick="show_selected_service(1)">
+                    <div class="half">
+                      <div class=card_image_container>
+                        <img class="card_image" src="img/click.png" alt="">
+                      </div>    
+                    </div>
+                    <div class="half">
+                      <div class="card_text">
+                          Easier access to voluntary work
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" onclick="show_selected_service(2)">
+                    <div class="half">
+                        <div class=card_image_container>
+                            <img class="card_image" src="img/research.png" alt="">
+                        </div> 
+                    </div>
+                    <div class="half">
+                        <div class="card_text">
+                            Find and recruit volunteer efficiently
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="infobox" id="infobox_service">
+                <h4 id="service_name"></h4>
+                <h5 id="service_subtitle"></h5>
+                <p id="service_p1"></p>
+                <p id="service_p2"></p>
+            </div>
+        </div>
+
+        <!-- Meilensteine -->
+        <div class="p30" id="meilensteine" class="section milestones">
+            <h2>Meilensteine</h2>
+            <ul class="timeline">
+				<li class="timeline-milestone is-completed timeline-start">
+					<div class="timeline-action">
+						<h2 class="title">Project enviroment set up</h2>
+						<span class="date">20.09.2021</span>
+						<div class="content">
+						
+						</div>
+					</div>
+				</li>
+				<li class="timeline-milestone is-completed">
+					<div class="timeline-action">
+						<h2 class="title">Technical evaluation completed</h2>
+						<span class="date">04.10.2021</span>
+						<div class="content">
+							
+						</div>
+					</div>
+				</li>
+				<li class="timeline-milestone is-halbfertig">
+					<div class="timeline-action">
+						<h2 class="title">Prototype completed</h2>
+						<span class="date">29.11.2021</span>
+						<div class="content">
+				  
+						</div>
+					</div>
+				</li>
+				<li class="timeline-milestone is-current">
+					<div class="timeline-action">
+						<h2 class="title">Beta implementation completed</h2> 
+						<span class="date">21.02.2022</span>
+						<div class="content">
+				  
+						</div>
+					</div>
+				</li>
+				<li class="timeline-milestone is-current">
+					<div class="timeline-action">
+						<h2 class="title">End-to-end testing successfully accepted</h2>
+						<span class="date">21.03.2022</span>
+						<div class="content">
+				  
+						</div>
+					</div>
+				</li>
+				<li class="timeline-milestone is-future timeline-end">
+					<div class="timeline-action">
+						<h2 class="title">Project publicly deployed</h2>
+						<span class="date">04.04.2021</span>
+						<div class="content">
+				  
+						</div>
+					</div>
+				</li>
+			</ul>
+        </div>
+        <div class="section nav withtopborder" style="margin-top:50px">
+			<div class="navbaritem"><a href="#tothetop"><div class="nav_inner nav_img"><img class="navbar_image" src="logo.png"></div></a></div>
+			<div class="navbaritem"><a href="#features"><div class="nav_inner">Features</div></a></div>
+			<div class="navbaritem"><a href="#services"><div class="nav_inner">Services</div></a></div>
+			<div class="navbaritem"><a href="#meilensteine"><div class="nav_inner">Meilensteine</div></a></div>
+			<div class="navbaritem"><a href="#team"><div class="nav_inner">Team</div></a></div>
+		</div>
+        <div class="section footer">
+			<div class="w70 p30">
+				Impressum<br>
+				Verantwortlich für den Inhalt:<br>
+				Michael Borko
+				<a href="mailto:mborko@tgm.ac.at">E-Mail</a><br>
+				Wexstraße 19-23, 1200 Wien<br>
+				erstellt im Rahmen eines Diplomprojektes im Schuljahr 2021/22
+			</div>
+			<div class="w30">
+				Copyright (c) 2021 - helpable Diplomarbeitsteam
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
