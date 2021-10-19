@@ -4,7 +4,7 @@
     <title>helpable - Diplomprojekt 5xHIT</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
     <!--<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">-->
@@ -51,8 +51,8 @@
         <div id="team" class="section team">
           <h2 class="p30">Team</h2>
           <h3 class="p30">The helpable dipoma project team</h3>
-          <div class="card_container">
-              <div class="inner">
+          <div class="card_container team">
+              <div class="inner team">
                 <div class="item" onclick="show_selected_team(event)">
                   <div class="half">
                       <div class="card_image_container port" >
@@ -150,6 +150,21 @@
                       <div class="card_text">
                           <div class="two_line_text" id="name"><b>Elisabeth Brodnik</b></div>
                           <div class="two_line_text" id="role"><i>Advisor</i></div>
+                          <p class="hidden" id="text">Lilly takes on an advisory role in the helpable projects and supports the team with her expertise.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="item" onclick="show_selected_team(event)">
+                  <div class="half">
+                      <div class="card_image_container port" >
+                          <img class="card_image_portrait" src="" alt="">
+                      </div>    
+                  </div>
+                  <div class="half">
+                      <div class="card_text">
+                          <div class="two_line_text" id="name"><b>Chrisi, Danis, Sebi, Hannes, Giovanni</b></div>
+                          <div class="two_line_text" id="role"><i>Helpable Team 2</i></div>
                           <p class="hidden" id="text">Lilly takes on an advisory role in the helpable projects and supports the team with her expertise.
                           </p>
                       </div>
@@ -270,7 +285,7 @@
 
         <!-- Meilensteine -->
         <div class="p30" id="meilensteine" class="section milestones">
-            <h2>Meilensteine</h2>
+            <h2>Milestones</h2>
             <ul class="timeline">
 				<li class="timeline-milestone is-completed timeline-start">
 					<div class="timeline-action">
