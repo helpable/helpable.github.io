@@ -199,7 +199,7 @@ h3 {
   }
   .half {
     width: 100%;
-    height: min-content !important;
+    height: 50% !important;
   }
 
   .p30 {
